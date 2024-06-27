@@ -7,12 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/messages")
+@RequestMapping("/message")
 public class MessageController {
     private List<Message> messageList = new ArrayList<>();
 
     @GetMapping
-    public List<Message> getAllMessages() {
+    public List<Message> getAllMessage() {
         return messageList;
     }
 
